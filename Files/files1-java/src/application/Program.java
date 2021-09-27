@@ -28,6 +28,7 @@ public class Program {
 		File sourceFile = new File(sourceFileString);
 		String sourceFolderString = sourceFile.getParent();
 
+		@SuppressWarnings("unused")
 		boolean sucess = new File(sourceFolderString + "\\out").mkdir();
 
 		String targetFileString = sourceFolderString + "\\out\\summary.csv";
